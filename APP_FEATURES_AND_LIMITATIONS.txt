@@ -1,0 +1,28 @@
+SALAH FX — Android Edition v2.3 (Gemini integration prepared)
+
+APP FEATURES
+- Android-first Forex academy, quizzes, risk calculator, journal and manual review
+- Local JSON backup/restore
+- PWA manifest, icons and offline app shell
+- Gemini chat UI with English/Amharic instructions and chart image upload
+- Secure-backend integration starter in gemini-backend/
+
+GEMINI STATUS
+Gemini is NOT live yet. The app is configured to call /api/chat on the same
+origin. Deploy the backend and route /api/* to it, then set GEMINI_API_KEY as a
+server-side secret. If the backend is unavailable, the app clearly falls back
+to offline educational responses.
+
+ANDROID INSTALL
+Host the app folder on HTTPS, then open the URL in Chrome on Android and use
+Chrome menu > Install app / Add to Home screen.
+
+NO LIVE TRADING CONNECTIONS
+No live Forex prices, MT5 connection, economic calendar, broker account access,
+order execution, deposits or withdrawals are connected. The in-app $100 is
+simulated. Real account remains manual and separate.
+
+SECURITY
+Never place API keys or broker credentials in frontend code, app files, chat,
+or screenshots. Use hosting secret settings for GEMINI_API_KEY.
+See gemini-backend/README_GEMINI_SETUP.txt.
